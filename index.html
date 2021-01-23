@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>2020 Election Voting Analysis</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class ="row">
+        <h2>Study Overview</h2>
+        <p>2020 appears to have far exceeded voting rates in recent US presidential elections.  
+            According to estimates on Wikipedia, 2020 voting among eligible population was between 66.4% and 72.1%.  
+            If correct, this would be the highest turnout % since the election of 1900 (re-election of William McKinley). 
+            At-least 22 million more votes were cast in 2020 vs. 2016 with an eligible population increase of only 
+            approximately 9 million.</p>
+        <p>For this study, I hypothesize that a states growth in population will positively correlate with an increase in 
+            voter turnout rates.  Further, I hypothesize that given the outcome of the election an increase in a states turnout rate 
+            should corrospond with a higher % voting democrat. </p>
+
+    </div>
+    <div class="row">
+        <h2>Change in Voting Eligible Populations vs Change in Voter Turnout% 2016 to 2020</h2>  
+        <h3>Visualization created with Python and Plotly. Size of plot indicates size of state, color represents 2020 results by party.</h3>
+        <div class="col-md-12">
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly.html" height="525" width="100%"></iframe>
+        </div>
+        <p>Analysis:   ------ r value, discussion</p>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/app.js"></script>
+
+  
+</body>
+
+</html>
