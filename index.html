@@ -43,7 +43,7 @@
     <hr>
     <h2>Interactive chart displaying Voting Eligible Population or Turnout for 2016 or 2020</h2>
     <p>Click on Axis labels to toggle data.  Visualization created with D3</p>
-    <div class="row">
+    
       <div class="row">
         <div class="col-xs-12  col-md-9">
           <div id="scatter2">
@@ -52,7 +52,29 @@
         </div>
       </div>
     <hr>
-    
+    <div class="row">
+    <div class ="well">
+      <h5>select view option</h5>
+      <select id="selDataset">
+        <option>rep_percent_2020</option>
+        <option>rep_percent_2016</option>
+        <option>turnout_2020</option>
+        <option>turnout_2016</option>
+        <option>turnout_delta</option>
+        <option>vep_2020</option>
+        <option>vep_2016</option>
+        <option>vep_delta</option>
+      </select>
+    </div>
+
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div id="plotlymap">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -60,7 +82,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="assets/js/config.js"></script>
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/app2.js"></script>
+
 
   
 </body>

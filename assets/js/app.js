@@ -198,7 +198,7 @@ d3.csv("assets/js/data.csv").then(function(chartData) {
     chartGroup.append("text")
       .attr("transform", `translate(${width / 2}, ${0-30})`)
       .attr("class", "aText")
-      .text("Bonus Chart");
+      .text("2016 vs 2020");
 
     
     // x axis labels event listener
