@@ -7,19 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Election Voter Turnout</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/d3Style.css">
 </head>
 
 <body>
-
+  
   <div class="container">
+
+    <div data-aos="zoom-in-down">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>2020 Election Voting Analysis</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <div class ="row">
         <h2>Study Overview</h2>
         <p>2020 appears to have far exceeded voting rates in recent US presidential elections.  
@@ -30,20 +44,32 @@
         <p>For this study, I hypothesize that a states growth in population will positively correlate with an increase in 
             voter turnout rates.  Further, I hypothesize that given the outcome of the election an increase in a states turnout rate 
             should corrospond with a higher % voting democrat. </p>
-
     </div>
+    </div>
+
+    <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <div class="row">
         <h2>Change in Voting Eligible Populations vs Change in Voter Turnout% 2016 to 2020.</h2>  
         <h3>Visualization created with Python and Plotly. Size of plot indicates size of state, color represents 2020 results by party.</h3>
         <div class="col-md-12">
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="plotly.html" height="525" width="100%"></iframe>
         </div>
-        <p>Analysis:   ------ r value, discussion</p>
+        
     </div>
+    </div>
+
+    <br>
     <hr>
+    <br>
+
+    <div data-aos="zoom-in-left">
     <h2>Interactive chart displaying Voting Eligible Population or Turnout for 2016 or 2020</h2>
     <p>Click on Axis labels to toggle data.  Visualization created with D3</p>
-    
+    </div>
+
+    <div data-aos="zoom-in-right">
       <div class="row">
         <div class="col-xs-12  col-md-9">
           <div id="scatter2">
@@ -51,7 +77,13 @@
           </div>
         </div>
       </div>
+    </div>  
+
+    <br>
     <hr>
+    <br>
+
+    <div data-aos="zoom-in-left">
     <div class="row">
     <div class ="well">
       <h5>select view option</h5>
@@ -66,8 +98,12 @@
         <option>vep_delta</option>
       </select>
     </div>
-
     </div>
+    </div>
+
+    <div data-aos="flip-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <div class="row">
       <div class="col-xs-12  col-md-9">
         <div id="plotlymap">
@@ -75,6 +111,15 @@
         </div>
       </div>
     </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
