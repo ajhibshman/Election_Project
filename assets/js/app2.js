@@ -59,7 +59,7 @@ d3.csv("assets/js/data2.csv").then(function(chartData) {
             ];
            
            var layout = {mapbox: {style: "dark", center: {lon: -97, lat: 40}, zoom: 3.2}, width: 1000, height: 600, margin: {t: 0, b: 0}};
-           
+           //api key
            var config = {mapboxAccessToken: API_KEY};
            
            Plotly.newPlot('plotlymap', data, layout, config);
